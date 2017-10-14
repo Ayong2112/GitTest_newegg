@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	div{
+		width:200px;
+		height: 200px;
+		background-color: red;
+
+	}
+	</style>
+	<script type="text/javascript">
+	window.onload = function(){
+		var oBtn = document.getElementById('btn');
+		var isColor = true;
+		oBtn.onclick = function(){
+			isColor = !isColor;
+			if(isColor){
+				oBtn.style.backgroundColor = "blue";
+				document.title = "1";
+				
+			}else if(!isColor){
+				oBtn.style.backgroundColor = "red";
+				document.title = "2";
+				
+
+			}
+		}
+	}
+
+
+	</script>
+</head>
+<body>
+	<div id = "btn"></div>
+</body>
+</html>

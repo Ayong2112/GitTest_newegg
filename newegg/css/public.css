@@ -1,0 +1,230 @@
+*{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;color:black;}
+body{font-size:12px;font-family:tahoma,宋体 !important;
+	min-width: 1200px;
+}
+/*网页顶部标题栏*/
+#topbar{
+	width:100%;
+	background:#f1f1f1;
+	height:24px;
+	color:#666666;
+	border-bottom: 1px solid #e2e2e2;
+	line-height: 24px;
+}
+#topbar #topbar_left{
+	float:left;
+	margin-left:33px;
+	
+}
+#topbar #topbar_left li{
+	float:left;
+	padding-left: 20px;
+	margin-left:10px;
+	cursor: pointer;
+}
+#topbar #topbar_left li:nth-of-type(1){
+	background: url(../images/topbar.png) 3px 7px no-repeat;
+}
+#topbar #topbar_left li:nth-of-type(2){
+	background: url(../images/topbar.png) -1px -127px no-repeat;
+}
+#topbar #topbar_left li:nth-of-type(1):hover{
+	background-position: 3PX -13PX;
+}
+#topbar #topbar_left li:hover a{
+	text-decoration: underline;
+}
+#topbar #topbar_left li:nth-of-type(2):hover{
+	background-position: -1PX -152PX;
+}
+#topbar #topbar_bottom{
+	float: right;
+}
+#topbar #topbar_bottom a:hover{
+	text-decoration: underline;
+}
+#topbar #topbar_bottom span{
+	margin-left:10px;
+}
+#topbar #topbar_bottom b{
+	font-weight: 500;
+}
+#topbar #topbar_bottom #register a{
+	color:#666666;
+}
+#topbar #topbar_bottom #register span{
+	color:black;
+}
+#topbar #topbar_right{
+	float:right;
+	padding-left:20px;
+	margin-right:40px;
+}
+#topbar #topbar_right>li{
+	float:left;
+	padding:0 7px;
+}
+#topbar #topbar_right li span{
+	display:inline-block;
+	width:6px;;
+	height:4px;
+	margin-left:5px;
+	background: url(../images/topbarright.png) left -27px no-repeat;
+}
+#topbar #topbar_right .open{
+	position: relative;
+}
+#topbar #topbar_right .open p{
+	position: absolute;
+	left:-14px;
+	box-shadow: 2px 2px 5px #0003;
+	width:80px;
+}
+#topbar #topbar_right .open>div{
+	position: absolute;
+	left:-51px;
+	width:118px;
+}
+#topbar #topbar_right .open:hover span{
+	transition: all 0.5s;
+	transform: rotate(180deg);
+	transform-origin: 50% 25% 0px;
+}
+#topbar #topbar_right .open:hover{
+	background:white;
+	border-bottom:1px solid #fff;
+}
+#topbar #topbar_right .open>div .relation a{
+	background-color: #4f9ee7;
+	text-align: center;
+	color:#fff;
+	padding:4px;
+}
+#topbar #topbar_right .open:hover .down{
+	box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+	border-top: 1px solid #fff;
+}
+#topbar #topbar_right .open .down{
+	padding:5px;
+	text-align: center;
+	display:none;
+	z-index: 10;
+	background: #fff;
+}
+#topbar #topbar_right .open:hover .down{
+	display:block;
+}
+#topbar #topbar_right .open .down b:nth-of-type(1){
+	color:#ff6600;
+	font-weight: 900;
+	font-size:10px;
+}
+#topbar #topbar_right .open .down b:nth-of-type(2){
+	font-size:9px;
+}
+#topbar #topbar_right .open .down>a{
+	text-decoration: underline;
+	color:blue;
+	margin:3px;
+	cursor: pointer;
+}
+#topbar #topbar_right .open .down>a:hover{
+	text-decoration: none;
+}
+#topbar #topbar_right .unopen:hover{
+	text-decoration: underline;
+}
+/*logo*/
+#header{
+	margin:0 auto;
+	width:1200px;
+	height:86px;
+	position:relative;
+}
+#header #logo{
+	vertical-align: middle;
+	position:absolute;
+	left:4px;
+	top:11px;
+}
+#header div:nth-of-type(2){
+	left: 368px;
+	height: 34px;
+	position: absolute;
+	top: 18px;
+}
+#header #search{
+	border: 2px solid #f60;
+	height: 30px;
+	border-radius: 0 3px 3px 0; 
+}
+#header #search input:nth-of-type(1){
+	height: 30px;
+	width:337px;
+    line-height: 28px;
+    border:0;
+    text-indent: 6px;
+    outline: none;
+    margin-left:0;
+}
+#header #search input:nth-of-type(2){
+	float:right;
+	background: #f60;
+	border:0;
+	color:#fff;
+	width:100px;
+	height:31px;
+	outline: none;
+	font-size:14px;
+	font-weight: 600;
+ 	font-family: "simsun";
+
+}
+#header .hot{
+	color: #767676;
+    margin-top: 7px;
+    overflow: hidden;
+    clear: both;
+}
+#header .hot li{
+	float:left;
+}
+#header .hot li a{
+	padding:18px;
+	border-left:1px solid #767676;
+}
+#header .hot .hot_first a{
+	border-left: 0;
+	padding-left:5px;
+}
+#header .hot a:hover{
+	text-decoration:underline;
+}
+#header #search_menu{
+	position:absolute;
+	border:1px solid #ddd;
+	width:337px;
+	height: auto;
+	left:1px;
+	top:34px;
+	background:#fff;
+	display:none;
+}
+#header #search_menu a{
+	display: block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 10px;
+}
+#header #search_menu a:hover{
+	background: #e6e6e6;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+
+
+

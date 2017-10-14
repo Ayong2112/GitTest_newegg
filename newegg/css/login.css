@@ -1,0 +1,390 @@
+*{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;color:black;}
+body{
+	font-family: tahoma,宋体 !important;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #484848;
+	margin:0 auto;
+	min-width: 960px;
+}
+/*最顶部*/
+#topbar{
+	width:100%;
+	background:#f1f1f1;
+	height:24px;
+	color:#666666;
+	border-bottom: 1px solid #e2e2e2;
+	line-height: 24px;
+}
+#topbar #topbarsize{
+	width:960px;
+	margin:0 auto;
+}
+#topbar #topbar_left{
+	float:left;
+}
+#topbar #topbar_left li{
+	float:left;
+	padding-left: 15px;
+	margin-left:10px;
+	cursor: pointer;
+}
+#topbar #topbar_left li{
+	background: url(../images/topbar_sprite150428.png) no-repeat;
+}
+#topbar #topbar_left li:nth-of-type(1){
+	background-position: 0px 7px ;
+}
+#topbar #topbar_left li:nth-of-type(2){
+	background-position: 0px -37px ;
+}
+#topbar #topbar_left li:nth-of-type(3){
+	background-position: 0px -85px ;
+}
+#topbar #topbar_left li:hover a{
+	text-decoration: underline;
+}
+#topbar #topbar_left li:nth-of-type(1):hover{
+	background-position: 0 -13PX;
+}
+#topbar #topbar_left li:nth-of-type(2):hover{
+	background-position: 0 -57PX;
+}
+#topbar #topbar_left li:nth-of-type(3):hover{
+	background-position: 0 -105PX;
+}
+#topbar #topbar_right{
+	float:right;
+}
+#topbar #topbar_right>div{
+	float: left;
+	padding:0 10px;
+}
+#topbar #topbar_right .open{
+	position: relative;
+}
+#topbar #topbar_right .open .down{
+	padding: 5px;
+	text-align: center;
+	z-index: 10;
+	background: #fff;
+}
+#topbar #topbar_right .open .down b:nth-of-type(1){
+	color:#ff6600;
+	font-weight: 900;
+	font-size:14px;
+}
+#topbar #topbar_right .open .down b:nth-of-type(2){
+	font-size:14px;
+}
+
+#topbar #topbar_right{
+	float:right;
+	padding-left:20px;
+	margin-right:40px;
+}
+#topbar #topbar_right  span{
+	display:inline-block;
+	width:6px;;
+	height:4px;
+	margin-left:5px;
+	background: url(../images/topbarright.png) left -27px no-repeat;
+}
+#topbar #topbar_right .open{
+	position: relative;
+}
+#topbar #topbar_right .open p{
+	position: absolute;
+	left:-14px;
+	box-shadow: 2px 2px 5px #0003;
+	width:80px;
+}
+#topbar #topbar_right .open>div{
+	position: absolute;
+	left:-45px;
+	width:118px;
+}
+#topbar #topbar_right .open:hover span{
+	transition: all 0.5s;
+	transform: rotate(180deg);
+	transform-origin: 50% 25% 0px;
+}
+#topbar #topbar_right>div:nth-of-type(2):hover{
+	text-decoration: underline;
+}
+#topbar #topbar_right .open:hover{
+	background:white;
+	border-bottom:1px solid #fff;
+}
+#topbar #topbar_right .open>div .relation a{
+	background-color: #4f9ee7;
+	text-align: center;
+	color:#fff;
+	padding:4px;
+}
+#topbar #topbar_right .open:hover .down{
+	box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+	border-top: 1px solid #fff;
+}
+#topbar #topbar_right .open .down{
+	padding:5px;
+	text-align: center;
+	display:none;
+	z-index: 10;
+	background: #fff;
+}
+#topbar #topbar_right .open .down div:nth-of-type(3){
+	background: #f60;
+	color:#fff;
+	margin-top:5px;
+	cursor: pointer;
+}
+#topbar #topbar_right .open:hover .down{
+	display:block;
+}
+
+#topbar #topbar_right .open .down>a{
+	text-decoration: underline;
+	color:blue;
+	margin:3px;
+	cursor: pointer;
+}
+#topbar #topbar_right .open .down>a:hover{
+	text-decoration: none;
+}
+#topbar #topbar_right .unopen:hover{
+	text-decoration: underline;
+}
+/*logo*/
+#logo{
+	margin:0 auto;
+	width:980px;
+	padding:20px 0;
+	overflow: hidden;
+}
+#logo img{
+	float:left;
+}
+#logo p{
+	border-left: 1px solid #D9D9D9;
+	float: left;
+	font: 24px/49px microsoft yahei;
+	margin: 5px 0 0 25px;
+	padding-left: 26px;
+}
+#mainbg{
+	background: #E3E3E3;
+	width:100%;
+	overflow: hidden;
+	padding:44px 0;
+}
+#main{
+	margin:0 auto;
+	width:960px;
+	overflow: hidden;
+}
+#main img{
+	float:left;
+}
+#main #login{
+	background: #FFF;
+	border: 1px solid #CCC;
+	overflow: hidden;
+	padding: 20px 0;
+	width: 360px;
+	float: right;
+}
+#main #login #loginup h2{
+	color: #333;
+	float: left;
+	font: 18px microsoft yahei;
+}
+#main #login #loginup{
+	padding: 0 25px 15px 30px
+}
+#main #login #loginup p{
+	float:right;	
+}
+#main #login #loginup div:nth-of-type(1){
+	overflow: hidden;
+	margin-bottom: 23px;
+}
+#main #login #loginup p a{
+	color: #039;
+}
+#main #login #loginup li{
+	height: 57px;
+	padding-left: 5px;
+}
+#main #login #loginup li span{
+	width:30px;
+	height:33px;
+	background: url(../images/login_icon.png) no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+}
+#main #login #loginup li input{
+	border:0;
+	outline: 0;
+	width: 250px;
+	vertical-align: middle;
+	margin-left: -4px;
+	height: 31px;
+	border: 1px solid #CFCFCF;
+    line-height: 30px;
+    text-indent: 5px;
+}
+#main #login #loginup li input:hover{
+	border: 1px solid #f60;
+}
+.gray, .hasDefaultText {
+    color: #b7b7b7
+}
+
+#main #login #loginup li:nth-of-type(1) span{
+	background-position:0 0; 
+}
+#main #login #loginup li:nth-of-type(2) span{
+	background-position:0 -59px; 
+}
+#main #login #loginup div:nth-of-type(2) a{
+	display: inline-block;
+	vertical-align: middle;
+	width: 73px;
+	color: #039;
+}
+#main #login #loginup div:nth-of-type(2){
+	overflow: hidden;
+}
+#main #login #loginup div:nth-of-type(2) a:nth-of-type(1){
+	float: left;
+}
+#main #login #loginup div:nth-of-type(2) a:nth-of-type(2){
+	float: right;
+}
+#main #login #loginup>input{
+	color: #FFFFFF;
+    background-color: #f7661f;
+    border: 1px solid #f7661f;
+    width: 280px;
+    padding: 0 19px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+#main #login #logindown{
+	color: #666;
+	padding: 16px 25px 0 30px;
+	overflow: hidden;
+}
+#main #login #logindown h6{
+	color: #666;
+	margin-bottom: 4px;
+	font-weight:500;
+	font-size: 12px;
+}
+#main #login #logindown p{
+	float: left;
+}
+#main #login #logindown .img1{
+	background: url(../images/4link.png) no-repeat;
+	height: 30px;
+	padding-left:35px;
+	line-height: 30px;
+	margin-right: 5px;
+}
+#main #login #logindown .img2{
+	background: url(../images/otherLoginIcon20140616.gif) no-repeat;
+}
+#main #login #logindown p:nth-of-type(1){
+	background-position: 0 0; 
+}
+#main #login #logindown p:nth-of-type(2){
+	background-position: 0 -45px; 
+}
+#main #login #logindown p:nth-of-type(3){
+	background-position: 0 -97px; 
+}
+#main #login #logindown p:nth-of-type(4){
+	background-position: 0 -161px; 
+}
+#main #login #logindown p:nth-of-type(5){
+	background-position: 3px -2609px; 
+}
+#main #login #logindown p:nth-of-type(6){
+	background-position: 3px -2508px; 
+}
+#main #login #logindown p:nth-of-type(7){
+	background-position: 3px -2508px; 
+}
+#main #login #logindown p:nth-of-type(8){
+	background:url(../images/ptlogo.gif) 0 7px no-repeat; 
+}
+#main #login #logindown .img2{
+	height: 26px;
+	line-height: 26px;
+	padding-left:30px;
+	margin-right: 9px;
+}
+#main #login #logindown .img3{
+	height: 26px;
+	line-height: 26px;
+	padding-left:26px;
+}
+#main #login #loginup li p{
+	width:200px;
+	height: 20px;
+	color:#f60;
+	padding-left:16px;
+	background: url(../images/icon_logoin_s.png) 0 -36px no-repeat;
+	margin-top:3px;
+	float: left;
+	display: none;
+
+}
+/*底部图片*/
+#footer{
+	width:960px;
+	overflow: hidden;
+	padding:30px 0 10px;
+	text-align: center;
+	margin:0 auto;
+}
+#footer>a{
+	background: url(../images/certi20150925.png) no-repeat;
+	width:130px;
+	height:45px;
+	display: inline-block;
+}
+#footer>a:nth-of-type(1){
+	background-position: left -92px; 
+	width:116px;
+}
+#footer>a:nth-of-type(2){
+	background-position: left -276px;
+}
+#footer>a:nth-of-type(3){
+	background-position: left -326px; 
+}
+#footer>a:nth-of-type(4){
+	background-position: left -376px;
+}
+#footer p{
+	font-size: 12px;
+	padding: 10px 0 0 10px;
+	color:#484848;
+}
+#footer p a{
+	padding: 3px;
+}
+#footer p a:hover{
+	text-decoration: underline;
+}
+
+
+
+    

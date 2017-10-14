@@ -1,0 +1,384 @@
+*{margin:0;padding:0;}
+li{list-style: none;}
+a{text-decoration: none;color:black;}
+body{
+	font-family: tahoma,宋体 !important;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #484848;
+	cursor: default;
+	min-width: 980px;
+}
+#header{
+	width:980px;
+	overflow: hidden;
+	margin:0 auto;
+	padding:30px 0;
+}
+#header img{
+	float: left;
+}
+#header #header_right{
+	float: right;
+	text-align: right;
+}
+#header #header_right div:nth-of-type(1) a{
+	margin:0 5px;
+	height: 22px;
+	display: inline-block;
+	color:#808080;
+	line-height: 22px;
+}
+#header #header_right div:nth-of-type(1) a:hover{
+	text-decoration: underline;
+	color:#1C459D;
+}
+#header #header_right div:nth-of-type(1) span{
+	color:#808080;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+}
+#header #header_right div:nth-of-type(1) p{
+	display: inline-block;
+	background:url(../images/contact.jpg) no-repeat;
+	width:210px;
+	height: 22px;
+	margin-left: 5px;
+}
+#header #header_right div:nth-of-type(2){
+	margin-top: 10px;
+	color:#808080;
+}
+#header #header_right div:nth-of-type(2) p{
+	color: #808080;
+}
+#header #header_right div:nth-of-type(2) a{
+	margin: 0 5px;
+	height: 22px;
+	display: inline-block;
+	
+	line-height: 22px;
+	color: #1C459D;
+	font-weight: normal;
+	z-index: 1000;
+}
+#header #header_right div:nth-of-type(2) a:hover{
+	color:#f60;
+}
+/*过程*/
+#throwline{
+	width:100%;
+	border-top:1px solid #ededed;
+	position: relative;
+}
+#throwline #mainline{
+	width:980px;
+	
+/*	display: flex;
+	justify-content: space-around;*/
+	position:absolute;
+	top:-9px;
+	left:15%;
+}
+#throwline #mainline div{
+	text-align: center;
+	float: left;
+	width:30%;
+	height:30px;
+	color: #666;
+	font-family: '微软雅黑';
+	line-height: 30px;
+}
+#throwline #mainline div span{
+	background: url(../images/sc_markicont20131021.jpg) center bottom no-repeat;
+	display: block;
+	width:28px;
+	margin-left: 45%;
+	height: 20px;
+}
+#throwline #mainline div:nth-of-type(1){
+	color:#000;
+}
+#throwline #mainline div:nth-of-type(1) span{
+	background-position: center top;
+}
+/*购物车*/
+#shoppingcarbg{
+	width:980px;
+	height: auto;
+	margin:0 auto;
+	margin-top: 60px;
+}
+#shoppingcar{
+	width:980px;
+	border:1px solid #d9d9d9;
+	margin:0 auto;
+	height: auto;
+	box-shadow:0px 3px 0px  #d9d9d9;
+	display: none;
+	
+}
+
+#shoppingcar #myshopping{
+	border-bottom: 1px solid #d9d9d9;
+	height:40px;
+	width: 99%;
+	line-height: 40px;
+	font-weight: 700;
+	color:#000;
+	padding-left: 10px;
+}
+#shoppingcar #shoppinggoods{
+	min-height: 190px;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	line-height: 190px;
+}
+#shoppingcar #shoppinggoods a{
+	margin:0 5px;
+	color:#1C459D;
+}
+/*商品价格页*/
+#shoppingprice{
+	width:980px;
+	height: auto;
+	overflow: hidden;
+	border:1px solid #d9d9d9;
+	margin:0 auto;
+	box-shadow:0px 3px 0px  #d9d9d9;
+	display:block;
+}
+#shoppingtop{
+	border-bottom: 1px solid #d9d9d9;
+	height:40px;
+	width: 99%;
+	line-height: 40px;
+	font-weight: 700;
+	color:#000;
+	padding-left: 10px;
+}
+#shoppingbg{
+	background-color: #ffffcc;
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+#shoppingtop p{
+	display: inline-block;
+}
+#shoppingtop p:nth-of-type(2){
+	float:right;
+	width:19%;
+	background-color: #ffffcc;
+	border-left:1px solid #d9d9d9;
+	padding-left: 10px;
+}
+/*结账选项*/
+#shoptop{
+	margin-top: 10px;
+	padding-bottom:15px;
+}
+#shoptop input{
+	margin-left: 5px;
+	vertical-align: middle;
+}
+#shoptop p{
+	display: inline-block;
+	width:9%;
+
+}
+#shoptop p:nth-of-type(1){
+	width: 5%;
+}
+#shoptop p:nth-of-type(2){
+	width:52%;
+}
+#shoppingprice #shoppingleft{
+	width:80%;
+	float:left;
+	height: auto;
+	background-color: #fff;
+	border-right: 1px solid #d9d9d9;
+}
+/*右边结账页面*/
+#shoppingprice #shoppingright{
+	width:17%;
+	overflow: hidden;
+	float:right;
+	padding-right:10px;	
+}#shoppingprice #shoppingright p{
+	margin:15px 8px;
+}
+#shoppingprice #shoppingright p span{
+	float:right;
+	color: #f60;
+	font-weight: 600;
+}
+#shoppingprice #shoppingright button{
+	color:#fff;
+	background-color: #f60;
+	font-size:14px;
+	border:0;
+	padding:10px 55px;
+}
+#shoppingprice #shoppingright a{
+	display: block;
+    color: #1e4c9a;
+    margin-top:5px;
+}
+#shoppingprice #shoppingright a:hover{
+	color:#f60;
+}
+/*左边商品具体页*/
+#loaddate{
+	width:784px;
+	overflow: hidden;
+}
+.shopgoods{
+	margin-left:15px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.shopgoods>div{
+	display:inline-block;
+}
+.shopgoods>p{
+	display: inline-block;
+}
+.shopgoods>img{
+	display: inline-block;
+	width:80px;
+	height: 60px;
+	vertical-align: middle;
+}
+.shopgoods>input{
+	display: inline-block;
+	vertical-align: middle;
+}
+.shopgoods>p{
+	width:7%;
+}
+.shopgoods>p:nth-of-type(1){
+	width:43%;
+}
+.shopgoods>input:nth-of-type(2){
+	width:4%;
+	height:24px;
+	vertical-align: middle;
+	text-align: center;
+	border:0;
+	border:1px solid #d9d9d9;
+}
+.shopgoods>input:nth-of-type(2){
+	margin-left: 5%;
+}
+.shopgoods>div:nth-of-type(1){
+	vertical-align: middle;
+}
+.shopgoods>div:nth-of-type(1) p{
+	border:1px solid #d9d9d9;
+	width:11px;
+	height: 11px; 
+	text-align: center;
+	line-height: 11px;
+	cursor: pointer;
+}
+.shopgoods>div:nth-of-type(1) p:nth-of-type(1){
+	margin-bottom: 1px;
+}
+.shopgoods>p:nth-of-type(3){
+	color:#f60;
+	margin-left: 2%;
+}
+.shopgoods>div:nth-of-type(2){
+	margin-left: 4%;
+}
+.shopgoods>div:nth-of-type(2) p{
+	color: #1e4c9a;
+	text-align: right;
+	cursor: pointer;
+}
+.shopgoods>div:nth-of-type(2) p:hover{
+	color:#f60;
+}
+
+/*底部*/
+#footer{
+	width: 980px;
+	margin:0 auto;
+	text-align: center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#footer p{
+	font-size: 12px;
+	padding: 10px 0 0 10px;
+	color:#484848;
+}
+#footer p a{
+	padding: 3px;
+}
+#footer p a:hover{
+	text-decoration: underline;
+}
+/*商品*/
+#goodsline{
+	width:980px;
+	border:1px solid #d9d9d9;
+	margin:0 auto;
+	margin-top: 60px;
+	height: 40px;
+	line-height: 40px;
+}
+#goodsline p{
+	padding:0 10px;
+	font-weight: 700;
+	border-bottom: 1px solid #f60;
+	width:80px;
+	color:#f60;
+	text-align: center;
+}
+#goods{
+	width:980px;
+	border:1px solid #d9d9d9;
+	border-top:0;
+	margin:0 auto;
+	height: auto;
+	box-shadow:0px 3px 0px  #d9d9d9;
+	overflow: hidden;
+}
+#goods div{
+	float: left;
+	width:16%;
+	padding: 2%;
+	margin-top: 10px;
+}
+#goods div p a:hover{
+	text-decoration: underline;
+    color: #1e4c9a;
+}
+#goods div p:nth-of-type(2){
+	color: #f60;
+	font-family: arial;
+	font-weight: bold;
+	margin-top: 30px;
+	font-size: 14px;
+}
+#goods div button{
+	margin-top: 10px;
+	border:0;
+	background: #fff;
+	border: 1px solid #838383;
+	color: #000;
+	font-weight: normal;
+	padding: 4px 8px;
+	margin-left: 30%;
+	cursor: pointer;
+}   
+#goods div button:hover{
+	border: 1px solid #dadada;
+}
+
+

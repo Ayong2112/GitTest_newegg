@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>二级菜单页</title>
+	<link rel="stylesheet" type="text/css" href="../css/public.css">
+	<link rel="stylesheet" type="text/css" href="../css/subpage.css">
+	<script type="text/javascript" src = "../js/subpage.js"></script>
+	<script type="text/javascript" src = "../js/jquery-1.10.1.min.js"></script>
+<!-- 	<script type="text/javascript" src = "../js/startMove.js"></script> -->
+</head>
+<body>
+		<div id = "topbar">
+		<ul id = "topbar_left">
+			<li><a>掌上新蛋</a></li>
+			<li><a>企业团购</a></li>
+		</ul>
+		<ul id = "topbar_right">
+			<li class="unopen"><a href = "#">我的订单</a></li>
+
+			<li class = "open">
+				<a href = "#">我的新蛋
+					<span></span>
+				</a>
+				<p class = "down">请<a>登录</a>后查看</p>
+			</li>
+			<li class="unopen"><a href = "#">帮助中心</a></li>
+			<li class = "open">
+				<a href = "#">客户服务
+					<span></span>
+				</a>
+				<div class = "down">
+					<b>400-820-4400</b>
+					<b>021-67072999</b>
+					<div>每天 9:00 - 18:00</div>
+					<div class = "relation">
+						<a href = "#">在线咨询</a>
+						<a href = "#">邮件我们</a>
+					</div>	
+				</div>
+			</li>
+		</ul>
+		<div id = "topbar_bottom">
+			<div id = "register">
+				<a href = "#">注册</a>
+				<b>丨</b>
+				<a href = "#">登陆</a>
+				<span>下午好,欢迎来新蛋购物！</span>
+			</div>
+		</div>	
+	</div>
+<!-- logo -->
+	<div id ="header">
+		<div id = "logo">
+			<img src="../images/logo.png"/>
+		</div>
+		<div>
+			<div id = "search">
+				<input type="text" placeholder="请输入您要搜索的关键字" id = "search_text"/>
+				<input type="button" value = "搜索"/>
+			</div>
+			<div id = "search_menu">
+			</div>
+			<ul class = "hot">
+				<li class = "hot_first"><a href="#">智能硬件</a></li>
+				<li><a href="#">iPhone8</a></li>
+				<li><a href="#">mate9</a></li>
+				<li><a href="#">ThinkPad</a></li>
+				<li><a href="#">电视机</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 菜单 -->
+	<!-- 菜单 -->
+	<div id = "menu">
+		<h3 id = "menulisth3"><a href="">全部商品分类</a></h3>
+		<!-- <div id = "menulist">
+			<li class = "menulist1">
+				<div class = "shadow">
+					<p id = "list1"></p>
+					<h4><a href = "">海外直购</h4>
+					<div id = "classify">
+						<a href="" class = "discolor">影音</a>
+						<a href="" class = "discolor">固态硬盘</a>
+						<a href="">奶粉</a>
+					</div>
+				</div>
+			</li>
+			<li class = "menulist1">
+				<div class = "shadow">
+					<p id = "list2"></p>
+					<h4>
+						<a href = "">手机</a>
+						<a href="">摄影</a>
+						<a href="">苹果</a>
+					</h4>
+					<div>
+						<a href="" class = "discolor">智能手机</a>
+						<a href="">微单</a>
+						<a href="" class = "discolor">数码包</a>
+					</div>
+				</div>
+			</li>
+			<li class = "menulist1">
+				<div  class = "shadow">
+					<p id = "list3"></p>
+					<h4>
+						<a href = "">电脑</a>
+						<a href="">外设</a>
+						<a href="">办公</a>
+					</h4>
+					<div>
+						<a href="" class = "discolor">笔记本</a>
+						<a href="" class = "discolor">智能硬件</a>
+						<a href="">硬盘</a>
+					</div>
+				</div>
+			</li>
+			<li class = "menulist1">
+				<div  class = "shadow">
+					<p id = "list4"></p>
+					<h4>
+						<a href = "">家用电器</a>
+					</h4>
+					<div>
+						<a href="">电饭煲</a>
+						<a href="" class = "discolor">电视</a>
+						<a href="">净水器</a>
+					</div>
+				</div>
+			</li class = "menulist1">
+			<li id = "menu_list_last">
+				<div>
+					<p id = "list5"></p>
+					<h4>
+						<a href = "">生活百货</a>
+					</h4>
+					<div>
+						<div  class = "shadow">
+							<a href="" class = "discolor">汽车用品</a>
+							<a href="">个人清洁</a>
+						</div>
+						<div  class = "shadow">
+							<a href="">家具</a>
+							<a href="">厨用</a>
+							<a href="">钟表</a>
+							<a href="">礼品</a>
+						</div>
+						<div  class = "shadow">
+							<a href="">服饰</a>
+							<a href="">女装</a>
+							<a href="">内衣</a>
+							<a href="">珠宝</a>
+						</div>
+						<div  class = "shadow">
+							<a href="">母婴</a>
+							<a href="">玩具</a>
+							<a href="">食品</a>
+							<a href="">酒饮</a>
+						</div>
+						<div  class = "shadow">
+							<a href="">鞋靴</a>
+							<a href="">箱包</a>
+							<a href="">运动</a>
+							<a href="">户外</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		侧边导航打开栏
+		<div id = "openmenu">
+		
+		</div>
+		</div> -->
+		<ul id = "nav">
+			<li><a href="">首页</a></li>
+			<li><a href="">限时团购</a></li>
+			<li><a href="">团团赚</a></li>
+			<li><a href="">海外直购</a></li>
+			<li><a href="">智能硬件</a></li>
+			<li><a href="">爱车配</a></li>
+			<li><a href="">二手宝库</a></li>
+		</ul>
+		<div id = "shopping">
+			<div>
+				<a>购物车
+					<span>0</span>
+					件
+					<s></s>
+				</a>
+				<p><s></s>您还没有购买商品，快去挑选吧!</p>
+			</div>
+			<div>
+				<a>收藏提醒
+					<s></s>
+				</a>
+				<P>请登录后查看<a href = ""><input type="button" value = "登录"></a></P>
+			</div>		
+		</div>
+	</div>
+<!-- 灰色部分 -->
+<div id = "topbg">   
+	<p><a>首页</a>><a>个护清洁</a>>电子体温计</p>
+</div>
+<div id = "main">
+	<div id = "main_left">
+
+	</div>
+	<!-- 右边部分 -->
+	<div id = "main_right">
+		<div id = "maintop">
+			<div>共2个产品</div>
+			<div>
+				<span>品牌：</span>
+				<a>迈克大夫(2)</a>
+			</div>
+			<div>
+				<span>价格：</span>
+				<a>200-300(2)</a>
+				<b>¥</b>
+				<p></p>
+				<b>-</b>
+				<p></p>
+				<p>筛选</p>
+			</div>
+			<div>
+				<span>类别：</span>
+				<a>额温枪(1)</a>
+				<a>耳温枪(1)</a>
+			</div>
+		</div>
+		<div id = "mainbottom">
+			<div>
+				<p>销量<span></span></p>
+				<p>价格<span></span></p>
+				<p>评分<span></span></p>
+				<p>上架时间<span></span></p>
+				<p>24</p>
+				<p>48</p>
+				<p>96</p>
+				<button>搜索</button>
+				<input type="text" placeholder="在结果中搜索">
+			</div>
+			<div>
+				<p><input type="checkbox">有返现</p>
+				<p><input type="checkbox">送积分</p>
+				<p><input type="checkbox">有赠品</p>
+				<p><input type="checkbox">限时抢</p>
+				<p><input type="checkbox">有库存</p>
+				<p><input type="checkbox">支持礼品包装</p>
+				<p><input type="checkbox">二手品</p>
+				<p><input type="checkbox">海外直购</p>
+			</div>
+			<div>
+				<P>对比商品</P>
+				<p class= "sp">1</p>
+				<p class= "sp">2</p>
+				<p class= "sp">3</p>
+				<p class= "sp">4</p>
+				<button>比较</button>
+				<a>清除全部</a>
+			</div>
+		</div>
+		<div id = "goods">
+
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
